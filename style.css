@@ -1,125 +1,50 @@
-#jumbotron {
-  background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Tahoma, Serif;
+  color: #263238;
+}
+nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
-}
-
-#jumbotron > h2 {
-  color: white;
-  text-align: center;
-}
-
-#jumbotron > a {
-  text-decoration: none;
-  background-color: white;
-  font-size: 1.5em;
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-
-form {
-  border: solid 1px black;
-  display: flex;
   flex-direction: column;
-  margin: 1rem 1rem;
 }
 
-form > * {
-  margin: 0.5rem;
+nav > i {
+  padding: 1rem;
+  font-size: 2em;
 }
 
-form > input[type="submit"] {
-  width: 40%;
-  margin: 0.5rem;
-  margin-right: auto;
+nav > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0;
 }
 
-footer {
-  border-top: solid 1px black;
-  padding: 2rem 2rem 4rem;
-  margin: 1rem 1rem;
+nav > ul > li {
+  padding: 0.5rem;
+  list-style-type: none;
 }
 
-#bio {
-  margin: 1rem;
-}
-
-#pizzas {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  height: auto;
-  width: 92.5%;
-  margin: auto;
-}
-
-#pizzas tbody {
-  width: 100%;
-}
-
-#pizzas th {
-  text-align: left;
-}
-
-#pizzas td,th {
-  width: 25%;
-}
-
-@media (max-width: 549px){
-  .hidden--mobile {
-    display: none !important;
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
   }
 
-
-
-  #bio img {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-right: 1rem;
-  }
-}
-
-  #bio {
-    margin-right: 3rem;
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 0.5rem 0.5rem;
+    border-radius: 25px;
   }
 
-  #bio img {
-    float: left;
-    width: 25%;
-    height: auto;
-    margin-right: 1rem;
+  nav > .fa-bars {
+    display: none;
   }
-
-
-.topnav {
-  background-color: #333;
-  overflow:hidden;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 16px 30px;
-  text-decoration: none;
-  font-size: 30px;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.container {
-  text-align: center;
-  padding: 25px;
-  background-color: #04aa6d;
-  border: #333 20px solid;
-}
-.header {}
