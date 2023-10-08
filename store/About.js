@@ -1,4 +1,4 @@
 export default {
-  header: "My Bio Page",
-  view: "Bio"
+  header: "My About Page",
+  view: "About"
 };
