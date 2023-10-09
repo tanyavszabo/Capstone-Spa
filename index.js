@@ -4,6 +4,17 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 
+function render() {
+  document.querySelector("#root").innerHTML = `
+      ${Header()}
+      ${Nav()}
+      ${Main()}
+      ${Footer()}
+    `;
+}
+
+render();
+
 const router = new Navigo("/");
 function render(state = store.Home) {
   document.querySelector("#root").innerHTML = `
