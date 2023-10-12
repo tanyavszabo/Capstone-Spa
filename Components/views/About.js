@@ -1,4 +1,2 @@
 import html from "html-literal";
-export default state => html`
-  <section id="about"></section>
-`;
+export default state => html``;
