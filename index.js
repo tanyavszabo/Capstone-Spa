@@ -13,6 +13,7 @@ function render(state = store.Home) {
   ${Footer()}
   `;
   afterRender();
+  cd;
   router.updatePageLinks();
 }
 function afterRender() {
@@ -66,49 +67,31 @@ router.hooks({
             done();
           });
         break;
-      // Add a case for each view that needs data from an API
-      case "Pizza":
-        // New Axios get request utilizing already made environment variable
-        axios
-          .get(`${process.env.PIZZA_PLACE_API_URL}/pizza`)
-          .then(response => {
-            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            store.Pizza.pizzas = response.data;
-            console.log(store.Pizza);
-            done();
-          })
+        // Add a case for each view that needs data from an API
 
-          .catch(error => {
-            console.log("It puked", error);
-            done();
-          });
-        break;
-      default:
-        done();
+        params => {
+          const view =
+            params && params.data && params.data.view
+              ? capitalize(params.data.view)
+              : "Home";
+
+          render(store[view]);
+        };
     }
-  },
-  already: params => {
-    const view =
-      params && params.data && params.data.view
-        ? capitalize(params.data.view)
-        : "Home";
 
-    render(store[view]);
+    router
+      .on({
+        "/": () => render(),
+        ":view": params => {
+          let view = capitalize(params.data.view);
+          if ("view" in store) {
+            render(store[view]);
+          } else {
+            render(store.Viewnotfound);
+            console.log(`View ${view} not defined`);
+          }
+        }
+      })
+      .resolve();
   }
 });
-
-router
-  .on({
-    "/": () => render(),
-    ":view": params => {
-      let view = capitalize(params.data.view);
-      if ("view" in store) {
-        render(store[view]);
-      } else {
-        render(store.Viewnotfound);
-        console.log(`View ${view} not defined`);
-      }
-    }
-  })
-  .resolve();
-//About collapse bar
