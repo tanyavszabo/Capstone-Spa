@@ -1,7 +1,9 @@
 import html from "html-literal";
 export default state => html`
-
-<h2>Collaborate</h2>
+<div class="w3-container w3-blue">
+  <h1>Collaborate</h1>
+</div>
+<div class="w3-container">
 <p>Fill out the fields to discover creatives in New York City!</p>
 <div class="w3-container">
 <form action="#">
