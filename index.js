@@ -13,7 +13,7 @@ function render(state = store.Home) {
   ${Footer()}
   `;
   afterRender();
-  cd;
+
   router.updatePageLinks();
 }
 function afterRender() {
@@ -67,31 +67,33 @@ router.hooks({
             done();
           });
         break;
-        // Add a case for each view that needs data from an API
-
-        params => {
-          const view =
-            params && params.data && params.data.view
-              ? capitalize(params.data.view)
-              : "Home";
-
-          render(store[view]);
-        };
+      default:
+        done();
     }
+  },
+  // Add a case for each view that needs data from an API
 
-    router
-      .on({
-        "/": () => render(),
-        ":view": params => {
-          let view = capitalize(params.data.view);
-          if ("view" in store) {
-            render(store[view]);
-          } else {
-            render(store.Viewnotfound);
-            console.log(`View ${view} not defined`);
-          }
-        }
-      })
-      .resolve();
+  already: params => {
+    const view =
+      params && params.data && params.data.view
+        ? capitalize(params.data.view)
+        : "Home";
+
+    render(store[view]);
   }
 });
+
+router
+  .on({
+    "/": () => render(store.Home),
+    ":view": params => {
+      let view = capitalize(params.data.view);
+      if (view in store) {
+        render(store[view]);
+      } else {
+        render(store.Viewnotfound);
+        console.log(`View ${view} not defined`);
+      }
+    }
+  })
+  .resolve();
