@@ -1,236 +1,4 @@
 
-/*
-#jumbotron {
-  background: url(assets/img/photo-1528334713982-2d1fe11a157a.jpg) center center no-repeat;  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-#jumbotron > h2 {
-  color: white;
-  text-align: center;
-}
-
-#jumbotron > a {
-  text-decoration: none;
-  background-color: white;
-  font-size: 1.5em;
-  padding: 1.5rem;
-  border-radius: 10px;
-}
-
-form {
-  border: solid 1px black;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 1rem;
-}
-
-form > * {
-  margin: 0.5rem;
-}
-
-form > input[type="submit"] {
-  width: 40%;
-  margin: 0.5rem;
-  margin-right: auto;
-}
-
-footer {
-  border-top: solid 1px black;
-  padding: 2rem 2rem 4rem;
-  margin: 1rem 1rem;
-}
-
-#bio {
-  margin: 1rem;
-}
-
-#pizzas {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  height: auto;
-  width: 92.5%;
-  margin: auto;
-}
-
-#pizzas tbody {
-  width: 100%;
-}
-
-#pizzas th {
-  text-align: left;
-}
-
-#pizzas td,th {
-  width: 25%;
-}
-
-@media (max-width: 549px){
-  .hidden--mobile {
-    display: none !important;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  nav > i {
-    padding: 1rem;
-    font-size: 2em;
-  }
-
-  nav > ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 0;
-  }
-
-  nav > ul > li {
-    padding: 0.5rem;
-    list-style-type: none;
-  }
-
-  #bio img {
-    float: left;
-    width: 40%;
-    height: auto;
-    margin-right: 1rem;
-  }
-}
-
-@media (min-width: 550px) {
-  nav > ul {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid;
-    padding: 0.5rem 0.5rem;
-    border-radius: 25px;
-  }
-
-  nav > .fa-bars {
-    display: none;
-  }
-
-  #bio {
-    margin-right: 3rem;
-  }
-
-  #bio img {
-    float: left;
-    width: 25%;
-    height: auto;
-    margin-right: 1rem;
-  }
-}
-*/
-/*.container {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 50px;
-  grid-template-rows: 100px 150px 150px 150px;
-  border: 10px solid black;
-  gap: 10px;
-  padding: 10px;
-  background-color: rgb(234, 71, 71);
- height:400px;
- width: fit-content;
- text-align: center;
-}
-
-.navbar {
-  grid-column: 1/6;
-  grid-row: 1/1;
-border: 10px solid black;
-background-color: azure;
-}
-
-@media (max-width: 700px) {
-  .grid {
-    grid-template-areas:
-      'navbar'
-      'sideL'
-      'sideR'
-      'footer';
-  }
-}
-
-.grid {
-  grid-template-areas:
-    'navbar'
-    'sideL  FeatureImg  sideR '
-    'footer';
-}
-
-.navbar {
-  grid-area: navbar;
-}
-.sideL {
-  grid-area: SideL;
-}
-
-.sideR {
-  grid-area: sideR;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-
-
-.box1 {
-  font-size: 25px;
-
-}
-.FeatureImg {
-  align-content:center;
-margin-left: 300px;
-
-
-
-}
-  .box2 {
-    grid-column: 1/6;
-    grid-row: 3/4;
-    border: 10px solid pink;
-  }
-
-
-    .navbar > li {
-      position: relative;
-      float: left;
-      display: inline;
-     padding: 0 50px 50px 50px;
-background-color: azure;
-overflow: hidden;
-    }
-.navbar > li a:hover {
-  background-color: blueviolet;
-}
-
-footer {
-  text-align: center;
-;
-
-}
-
-
-footer {
-  border-top: solid 1px black;
-
-  text-align: center;
-
-  */
 
   * {
     box-sizing: border-box;
@@ -348,3 +116,126 @@ footer {
     overflow: hidden;
     background-color: #f1f1f1;
   }
+
+  /* About section*/
+  .about {
+    background: rgb(224, 251, 222);
+    background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+    padding: 100px 0 20px 0;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-info {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #40b736;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1f9405;
+}
+
+/*Contact Section */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
