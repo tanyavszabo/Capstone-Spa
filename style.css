@@ -1,6 +1,6 @@
 @media screen and (min-width: 480px) {
   body {
-    background-color: lightgreen;
+    background-color: #56235c;
   }
 
 
@@ -33,48 +33,26 @@
   }
 
 /* connect,collab,create*/
-.cccc {
-  background-color: #ccc;
-  text-align: center;
-  font-size: 75px;
-  font-stretch: expanded;
-}
-
-
-}
-/*about page*/
-/*about page grid*/
-.about-grid-container {
-  display: grid;
-  grid-template-rows: 25%;
-}
-
-
-.about-grid-item2 {
-  background-color: white;
-  padding: 30px 100px 30px 100px;
-  border: 10px solid black;
-  margin: 0 200px 0 200px;
-}
-
-.about-h1 {
-text-align: center;
-font-size: 50px;
-}
-/* home */
-/*home grid*/
-
 .home-grid-container {
   display: grid;
-  grid-template-areas:`ccc ccc ccc ccc ccc ccc`
-  `feature-container feature-container feature-container feature-container feature-container feature-container`
-  `button1 button1 button1 button1 button1 button1`
-  `home-img home-img home-img home-img home-img home-img`;
+  grid-template-rows: 150px 500px 150px;
   grid-gap: 10px;
-  background-color: #2196F3;
-  border: #000000 solid 10px;
+  background-color: #d599dc;
+  border: #56235c solid 10px;
 }
 
+.feature-container {
+  grid-row: 2;
+}
+
+.button1 {
+  grid-row: 3;
+
+}
+.collab-button{
+  background-color: #000000;
+  color: white;
+}
 .home-grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -83,21 +61,35 @@ font-size: 50px;
 }
 
 .feature-image1 {
-  grid-area: feature-container;
-
   object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
+.feature-container h3 {
+font-size: 20px;
+padding-top:0
+}
+.home-img {
+  display: flex;
+  justify-content: space-between;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
+ .home-img img {
+  flex: 1;
+  height: 200px;
+  object-fit: contain;
+}
+.home-img p {
+ margin-top: 10px;
+}
+.home-grid-container .cccc {
+  text-align: center;
+  color:black;
+  font-weight: 500;
+font-stretch: extra-expanded;
+font-size: 60px;
+}
+/*About Page*/
 
 

@@ -10,7 +10,7 @@ export default state => html`
    </head>
    <body>
    <div class="about-grid-container">
-  <div class="cccc">Connect.Collab.Create.<br>COBALT</div>
+  <div class="about-cccc">Connect.Collab.Create.<br>COBALT</div>
   <div class="about-grid-item2">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_nFmi8-hoyDsA9QvnK6VcpbP91ABxJL9LXw&usqp=CAU"class="about-img">
   <h1 class="about-h1">ABOUT</h1>When you are offered an opportunity that could be “Your Next Big
