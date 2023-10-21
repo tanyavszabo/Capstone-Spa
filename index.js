@@ -88,6 +88,7 @@ router
     "/": () => render(store.Home),
     ":view": params => {
       let view = capitalize(params.data.view);
+      console.log("view", view);
       if (view in store) {
         render(store[view]);
       } else {
