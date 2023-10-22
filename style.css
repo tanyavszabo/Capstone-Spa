@@ -1,12 +1,12 @@
 @media screen and (min-width: 480px) {
   body {
-    background-color: #56235c;
+    background-color: #320138;
   }
 
 
   /*nav bar*/
   nav {
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, #d7badb, #2f0235);
   }
 
   nav ul {
@@ -25,19 +25,21 @@
     text-decoration: none;
     color: #000000;
     padding: 25px;
+    font-size: 30px;
   }
 
   nav a:hover {
-    background-color: #333;
+    background-color:#320138;
     color: #fff;
   }
 
-/* connect,collab,create*/
+/*Home page*/
+
 .home-grid-container {
   display: grid;
   grid-template-rows: 150px 500px 150px;
   grid-gap: 10px;
-  background-color: #d599dc;
+  background-image: linear-gradient(to right, #a90260, #0000ff);;
   border: #56235c solid 10px;
 }
 
@@ -54,42 +56,76 @@
   color: white;
 }
 .home-grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+ background-color: #ffffffa8;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
 
-.feature-image1 {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-}
-.feature-container h3 {
-font-size: 20px;
-padding-top:0
-}
-.home-img {
-  display: flex;
-  justify-content: space-between;
- }
 
- .home-img img {
-  flex: 1;
-  height: 200px;
-  object-fit: contain;
-}
-.home-img p {
- margin-top: 10px;
-}
 .home-grid-container .cccc {
   text-align: center;
   color:black;
   font-weight: 500;
 font-stretch: extra-expanded;
 font-size: 60px;
+background-image: linear-gradient(to right, #a9021b, #0000ff);
 }
+
 /*About Page*/
+.about-cccc {
+  text-align: center;
+  color:black;
+  font-weight: 500;
+font-stretch: extra-expanded;
+font-size: 60px;
+background-image: linear-gradient(to right, #a90260, #0000fff6);
+}
+
+.about-grid-container {
+  border: 10px solid black;
+  height: fit-content;
+
+
+
+}
+
+.about-grid-item2 {
+  background: url(assets/img/about.img.jpg) center center no-repeat;  background-size: cover;
+  border: #090909 solid 10px;
+  margin: ;
+}
+
+.about-grid-item2 h1 {
+  font-size: 75px;
+  text-align: center;
+  color: #8b507f;
+}
+
+.about-grid-item2 p {
+  padding: 75px;
+  font-size: 25px;
+  color: #fff;
+}
+
+/*collab page*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: none;
+}
 
 

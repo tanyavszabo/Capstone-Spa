@@ -13,7 +13,7 @@ export default state => html`
   <div class="about-cccc">Connect.Collab.Create.<br>COBALT</div>
   <div class="about-grid-item2">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_nFmi8-hoyDsA9QvnK6VcpbP91ABxJL9LXw&usqp=CAU"class="about-img">
-  <h1 class="about-h1">ABOUT</h1>When you are offered an opportunity that could be “Your Next Big
+  <h1 class="about-h1">ABOUT</h1><p>When you are offered an opportunity that could be “Your Next Big
                 Break”, you take it. That is how I found myself on a one-way
                 flight to Mexico, with a 50lbs duffle and a pair of high heels.
                 I was offered a contract to model in Mexico for the summer and
@@ -46,7 +46,7 @@ export default state => html`
                 experience, and adding to their portfolios. Currently, safety
                 isn't prioritized in most platforms' creative use. I plan to
                 prioritize safety by implementing security features such as
-                profile verification and account approval.</div>
+                profile verification and account approval.</p></div>
 
 </div>
 

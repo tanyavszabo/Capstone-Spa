@@ -3,8 +3,8 @@ export default state => html`
   <div class="home-grid-container">
     <div class="cccc">
       <strong>Co</strong
-      >nnect.Col<strong>lab</strong>.Crea<strong>t</strong>e.<br /><strong
-        >COBALT</strong
+      >nnect.Col<strong>lab</strong>.Crea<strong>t</strong>e.<br /><em
+        ><strong>COBALT</strong></em
       >.
     </div>
     <div class="feature-container">
