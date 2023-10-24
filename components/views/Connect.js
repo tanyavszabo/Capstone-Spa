@@ -1,13 +1,14 @@
 import html from "html-literal";
 export default state => html`
-  <div class="contact-container">
+  <div class="box1">
     <div style="text-align:center">
       <h2>Contact Us</h2>
       <p>Leave us a message:</p>
     </div>
-    <div class="row">
+    <div class="connect-box">
       <div class="column">
-        <img src="#" style="width:100%" />
+        <!--why isn't this image working?-->
+        <img src="assetsimglogo.img.png" style="width:100%" />
       </div>
       <div class="column">
         <form action="/action_page.php">
@@ -17,6 +18,7 @@ export default state => html`
             id="fname"
             name="firstname"
             placeholder="Your name.."
+            required
           />
           <label for="lname">Last Name</label>
           <input
@@ -24,6 +26,7 @@ export default state => html`
             id="lname"
             name="lastname"
             placeholder="Your last name.."
+            required
           />
 
           <label for="subject">Subject</label>
@@ -31,6 +34,7 @@ export default state => html`
             id="subject"
             name="subject"
             placeholder="Write something.."
+            required
             style="height:170px"
           ></textarea>
           <input type="submit" value="Submit" />

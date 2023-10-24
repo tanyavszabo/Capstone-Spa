@@ -1,11 +1,8 @@
 import html from "html-literal";
 export default state => html`
-<div class="w3-container w3-blue">
-  <h1>Collaborate</h1>
-</div>
-<div class="w3-container">
-<p>Fill out the fields to discover creatives in New York City!</p>
-<div class="w3-container">
+  <div class="create-container">
+<p class="create-p">Fill out the fields to discover creatives in New York City!</p>
+<div class="create-container1">
 <form action="#">
       <label for="creative"> I am a  </label>
       <select name="Creative_type" id="creative">
@@ -73,7 +70,5 @@ export default state => html`
     <input type="submit" value="Search"/>
 
 </form>
-</div>
-
-
+  </div>
 `;
