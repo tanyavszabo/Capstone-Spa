@@ -1,7 +1,7 @@
 import html from "html-literal";
 export default state => html`
   <div class="create-container">
-<p class="create-p">Fill out the fields to discover creatives in New York City!</p>
+<p class="create-p">Create a Post!</p>
 <div class="create-container1">
 <form action="#">
       <label for="creative"> I am a  </label>

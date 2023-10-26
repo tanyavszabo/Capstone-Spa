@@ -3,7 +3,7 @@ export default state => html`
   <!--I want to add a collapsible bar with a form inside of it*/-->
 
   <div class="collab-container">
-    <h3>Collaborate</h3>
+    <h3>Collaborate with NYC Creatives</h3>
 <p>Fill out the fields to discover creatives in New York City!</p>
 <div class="collab-container1">
 <form action="#">
