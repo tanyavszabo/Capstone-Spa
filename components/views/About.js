@@ -1,19 +1,11 @@
 import html from "html-literal";
 export default state => html`
   <section id="About">
-    <h1>
-      About Me
-      <h1>
-        <p style="font-weight: bold">Attention catching text here...</p>
-        <div class="about-info">
-          <div class="about-img">
-            <img src="#" alt="Tanya Szabo" />
-          </div>
-          <div>
-            <p>
-              <em>
-                you are offered an opportunity that could be “Your Next Big
-                Break”, you take it. That is how I found myself on a one-way
+  <div class="about-grid-container">
+  <div class="about-cccc">Connect.Collab.Create.<br>COBALT</div>
+  <div class="about-grid-item2">
+  <h1 class="about-h1">ABOUT</h1><p>When you are offered an opportunity that could be "Your Next Big
+                Break", you take it. That is how I found myself on a one-way
                 flight to Mexico, with a 50lbs duffle and a pair of high heels.
                 I was offered a contract to model in Mexico for the summer and
                 was determined to make a small splash in the fashion world. I
@@ -34,7 +26,7 @@ export default state => html`
                 Along with financial dependency and prerequisites, it is easy
                 for beginners to be taken advantage of or placed in unsafe
                 situations while searching for opportunities. My application is
-                called “Cobalt”- Create. Collab. Connect. The purpose of Cobalt
+                called "Cobalt"- Create. Collab. Connect. The purpose of Cobalt
                 is to create a safe network of creatives (which include
                 photographers, models, fashion stylists, hair stylists, makeup
                 artists, and videographers) to collaborate with each other,
@@ -45,15 +37,9 @@ export default state => html`
                 experience, and adding to their portfolios. Currently, safety
                 isn't prioritized in most platforms' creative use. I plan to
                 prioritize safety by implementing security features such as
-                profile verification and account approval.
-              </em>
-            </p>
-            <button>Read More...</button>
-            <footer>
-              <p> 2023 Cobalt. All Rights Reserved.</p>
-          </div>
-        </div>
-      </h1>
-    </h1>
-  </section>
-`;
+                profile verification and account approval.</p></div>
+
+</div>
+
+</div>
+  `;
