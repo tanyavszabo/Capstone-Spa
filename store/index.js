@@ -6,3 +6,4 @@ export { default as Links } from "./Links";
 export { default as Viewnotfound } from "./Viewnotfound";
 export { default as Connect } from "./Connect";
 export { default as Profile } from "./Profile";
+export { default as test } from "./test";
