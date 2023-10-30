@@ -4,5 +4,6 @@ export default [
   { title: "Collab", text: "Collab" },
   { title: "Connect", text: "Connect" },
   { title: "Create", text: "Create" },
-  { title: "Profile", text: "Profile" }
+  { title: "Profile", text: "Profile" },
+  { title: "test", text: "test" }
 ];

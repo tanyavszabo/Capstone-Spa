@@ -11,7 +11,7 @@ export default state => html`
         <img src="assetsimglogo.img.png" style="width:100%" />
       </div>
       <div class="column">
-        <form action="/action_page.php">
+        <form action="/action_page.php" id="postForm">
           <label for="fname">First Name</label>
           <input
             type="text"
@@ -31,7 +31,7 @@ export default state => html`
 
           <label for="subject">Subject</label>
           <textarea
-            id="subject"
+            id="messageInput"
             name="subject"
             placeholder="Write something.."
             required
@@ -39,6 +39,9 @@ export default state => html`
           ></textarea>
           <input type="submit" value="Submit" />
         </form>
+
+          <!--Display posted messages here-->
+        </div>
       </div>
     </div>
   </div>
