@@ -1,7 +1,39 @@
 import html from "html-literal";
 export default state => html`
   <section id="create">
-    <form id="create-form" method="POST" action="/api/posts">
+ <title>Create Post</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="create.js"></script>
+</head>
+<body>
+    <h1>Create Post</h1>
+    <form id="createPostForm">
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Create">
+        </div>
+    </form>
+
+`;
+
+
+
+
+
+
+
+
+
+
+
+    <!--<form id="create-form" method="POST" action="/api/posts">
       <div class="create-container">
         <h1>Create a Post</h1>
         <label for="creative-type">I am a:</label>
