@@ -30,64 +30,11 @@ export default state => html`
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThMHfvpsoN4gaKrZ4L9FYxBb-6VnogQ2jXw&usqp=CAU"
       />
+      <h3>
+        The weather in ${state.weather.city} is ${state.weather.description}.
+        Temperature is ${state.weather.temp}F, and it feels like
+        ${state.weather.feelsLike}F.
+      </h3>
     </div>
   </div>
-  <!--Trying to make the .collab-button reroute to the collab page, but currently just trying to make it just do something
-  <script defer>
-    let app = document.querySelector("app");
-    let button = document.querySelector(".collab-button");
-
-    button.state = {
-      //inital state
-      pressed: false
-    };
-
-    function buttonChanged() {
-      app.innerHTML = "button pressed";
-      button.innerHTML = "button pressed again";
-      function buttonChanged2() {
-        app.innerHTML = "button pressed another time";
-        button.innerHTML = "button pressed yet again";
-      }
-    }
-    button.addEventListener("click", () => {
-      button.state.pressed = !button.state.pressed;
-      //toggle a boolean between true and false
-      button.state.pressed ? buttonChanged() : buttonChanged2();
-      //use ternary operator to check state of the button
-      console.log(button.state);
-    });
-
-
-  </script>
-`;-->
-<!--Trying to make the .collab-button reroute to the collab page-->
-<script defer>
- let app = document.querySelector("app");
- let button = document.querySelector(".collab-button");
-
- button.state = {
-   //inital state
-   pressed: false
- };
-
- function buttonChanged() {
-   app.innerHTML = "button pressed";
-   button.innerHTML = "button pressed again";
-   function buttonChanged2() {
-     app.innerHTML = "button pressed another time";
-     button.innerHTML = "button pressed yet again";
-   }
- }
-
- button.addEventListener("click", () => {
-   button.state.pressed = !button.state.pressed;
-   //toggle a boolean between true and false
-   button.state.pressed ? buttonChanged() : buttonChanged2();
-   //use ternary operator to check state of the button
-   console.log(button.state);
-
-   // Redirect to the collab.js view
-   window.location.href = "/collab.js";
- });
-</script>`;
+`;
