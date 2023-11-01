@@ -10,11 +10,7 @@ export default state => html`
       <th>Name</th>
       ${state.collabs
         .map(collab => {
-          return `<tr><td>${collab.creative}</td><td>${
-            collab.location
-          }</td><td>${collab.gender}</td><td>${collab.age.join(
-            " & "
-          )}</td><td>${collab.name}</td></tr>`;
+          return `<tr><td>${collab.creative}</td><td>${collab.location}</td><td>${collab.gender}</td><td><td>${collab.name}</td></tr>`;
         })
         .join("")}
     </table>
