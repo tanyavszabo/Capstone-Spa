@@ -33,14 +33,15 @@ function afterRender(state) {
       const requestData = {
         location: inputList.location.value,
         creative: inputList.creative.value,
-        gender: inputList.gender.value
+        gender: inputList.gender.value,
+        name: inputList.name.value
       };
       // Log the request body to the console
       console.log("request Body", requestData);
 
       axios
         // Make a POST request to the API to create a new pizza
-        .post(`${process.env.collab_URL}/collabs`, requestData)
+        .post(`${process.env.COLLAB_URL}/collabs`, requestData)
         .then(response => {
           //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Collab.collabs.push(response.data);
@@ -102,7 +103,7 @@ router.hooks({
       case "Collab": {
         // New Axios get request utilizing already made environment variable
         axios
-          .get(`${process.env.PIZZA_PLACE_API_URL}/collabs`)
+          .get(`${process.env.COLLAB_URL}/collabs`)
           .then(response => {
             // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
             store.Collab.collabs = response.data;

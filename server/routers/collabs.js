@@ -7,10 +7,11 @@ const router = Router();
 router.post("/", async (request, response) => {
   try {
     const body = request.body;
-    const newCollab = newCollab({});
+    const newCollab = Collab({});
     newCollab.creative = body.creative;
     newCollab.location = body.location;
     newCollab.gender = body.gender;
+    newCollab.name = body.name;
     const data = await newCollab.save();
 
     response.json(data);

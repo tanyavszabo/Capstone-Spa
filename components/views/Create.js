@@ -33,8 +33,16 @@ export default state => html`
           <option value="female">Female</option>
         </select>
       </div>
-
-      <input type="hidden" name="name" id="name" value="Name" />
+      <div>
+        <label for="name">name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter name"
+          required
+        />
+      </div>
       <input type="submit" name="submit" value="Submit" />
     </form>
   </section>
