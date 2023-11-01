@@ -31,9 +31,8 @@ function afterRender(state) {
 
       // Create a request body object to send to the API
       const requestData = {
-        name: inputList.name.value,
+        location: inputList.location.value,
         creative: inputList.creative.value,
-        age: inputList.age.value,
         gender: inputList.gender.value
       };
       // Log the request body to the console
@@ -41,7 +40,7 @@ function afterRender(state) {
 
       axios
         // Make a POST request to the API to create a new pizza
-        .post(`${process.env.PIZZA_PLACE_API_URL}/collabs`, requestData)
+        .post(`${process.env.collab_URL}/collabs`, requestData)
         .then(response => {
           //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
           store.Collab.collabs.push(response.data);
@@ -100,7 +99,7 @@ router.hooks({
           });
         break;
       // Add a case for each view that needs data from an API
-      case "Collab":
+      case "Collab": {
         // New Axios get request utilizing already made environment variable
         axios
           .get(`${process.env.PIZZA_PLACE_API_URL}/collabs`)
@@ -116,6 +115,7 @@ router.hooks({
             done();
           });
         break;
+      }
       default:
         done();
     }
