@@ -1,13 +1,16 @@
 import { Router } from "express";
-import Collab from "../models/Collab.js";
+import Collab from "../models/collab.js";
 
 const router = Router();
 
-// Create pizza route
+// Create  route
 router.post("/", async (request, response) => {
   try {
-    const newCollab = newCollab(request.body);
-
+    const body = request.body;
+    const newCollab = newCollab({});
+    newCollab.creative = body.creative;
+    newCollab.location = body.location;
+    newCollab.gender = body.gender;
     const data = await newCollab.save();
 
     response.json(data);

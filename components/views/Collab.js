@@ -20,7 +20,7 @@ export default state => html`
     </table>
   </section>
 </tr>
-<!--<div class="collab-container">
+<div class="collab-container">
     <h3>Collaborate with NYC Creatives</h3>
 <p>Fill out the fields to discover creatives in New York City!</p>
 <div class="collab-container1">
@@ -65,5 +65,5 @@ export default state => html`
 
 </form>
       </div>
-      -->
+
 `;

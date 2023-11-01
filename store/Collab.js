@@ -1,4 +1,5 @@
 export default {
   header: "My Collab Page",
-  view: "Collab"
+  view: "Collab",
+  collabs: []
 };
