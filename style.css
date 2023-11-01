@@ -91,15 +91,12 @@ background-image: url(assets/img/purple.img);
 .about-grid-container {
   border: 10px solid black;
   height: fit-content;
-
-
-
 }
 
 .about-grid-item2 {
   background: url(assets/img/about.img.jpg) center center no-repeat;  background-size: cover;
   border: #090909 solid 10px;
-  margin: ;
+
 }
 
 .about-grid-item2 h1 {
@@ -118,31 +115,10 @@ font-stretch: extra-expanded;
 }
 
 /*collab page*/
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.content {
-  padding: 0 18px;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  display: none;
-}
-
-/*Collab*/
-/* I want to add a collapsible bar with a form inside of it*/
 
 
 
-.collab-container {
+#collabs {
   padding: 50px;
   background-color: #cb9bd1c7;
   border: #320138 solid 20px;
@@ -150,17 +126,23 @@ font-stretch: extra-expanded;
   font-stretch: extra-expanded;
   font-weight: bold;
 }
-.collab-container1 {
+.collabs tbody {
   background-color: #fffeff52;
   margin: 25px;
   padding: 25px;
 }
 
-.collab-container h3 {
+.collabs th {
   text-align: center;
   color: rgb(255, 230, 119);
   font-size: 40px;
 }
+#collabs td, th {
+  width: 25%;}
+
+@media(max-width: 549px){
+.hidden--mobile {
+  display: none !important;}
 
 /*Connect Page*/
 .box1 {
@@ -197,7 +179,7 @@ font-stretch: extra-expanded;
 }
 /*Create Page*/
 
-.create-container {
+#create{
   background-color: #cb9bd1c7;
   border: #320138 solid 20px;
   font-family: 'Orbitron', sans-serif;
@@ -228,36 +210,7 @@ font-stretch: extra-expanded;
 font-size: 40px;
 }
 
-/*Profile Page*/
 
-.profile-box {
-  background-color: #fffeff52;
-  margin: 50px;
-  padding: 50px;
-}
-
-.profile-container {
-  background-color: #cb9bd1c7;
-  font-family: 'Orbitron', sans-serif;
-  font-stretch: extra-expanded;
-  font-weight: bold;
-  margin: 50px;
-  padding: 50px;
-
-}
-.profile-container h3 {
-  text-align: center;
-  font-size: large;
-  color:rgb(255, 230, 119);
-font-size: 40px;
-font-family: 'Orbitron', sans-serif;
-}
-
-.profile-grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
 
 .grid-item {
   background-color: #dddddd6b;
@@ -284,46 +237,19 @@ font-family: 'Orbitron', sans-serif;
 }
 .p-grid2 {}
 
-/*TEST*/
-
-.testbody {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+form {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
 }
 
-.h1 {
-  text-align: center;
-  margin-top: 50px;
+form > * {
+  margin: 0.5rem;
 }
 
-.myForm {
-  margin-top: 50px;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-}
-button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-#result {
-  margin-top: 20px;
-  text-align: center;
+form > input[type="submit"] {
+  width: 40%;
+  margin: 0.5rem;
+  margin-right: auto;
 }

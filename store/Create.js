@@ -2,6 +2,7 @@ export default {
   header: "My Create Page",
   view: "Create"
 };
+/*create.js
 document.getElementById("createPostForm").addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -21,11 +22,12 @@ document.getElementById("createPostForm").addEventListener("submit", function(ev
       content: content
   };
 
-  // Send the post object to the server using fetch API
-  fetch("https://api.example.com/posts", {
+  // Send the post object to the MockAPI server using fetch API
+  fetch("https://mockapi.io/api/{your-api-id}/posts", {
       method: "POST",
       headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          "app-id": "{your-app-id}" // replace with your MockAPI app ID
       },
       body: JSON.stringify(post)
   })
@@ -42,4 +44,4 @@ document.getElementById("createPostForm").addEventListener("submit", function(ev
   .catch(function(error) {
       alert(error.message);
   });
-});
+});*/
