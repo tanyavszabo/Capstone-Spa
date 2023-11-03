@@ -1,10 +1,10 @@
 import html from "html-literal";
 export default state => html`
-  <section id="create">
-    <form id="create" method="POST" action="">
+  <section class="create-container">
+    <form class="create-form" method="POST" action="">
       <h2>Create a post</h2>
       <div>
-        <label for="creative">Creative:</label>
+        <label for="creative">Looking for this Creative:</label>
         <select id="creative" name="creative">
           <option value="">Select a Creative</option>
           <option value="model">Model</option>
@@ -33,6 +33,17 @@ export default state => html`
           <option value="female">Female</option>
         </select>
       </div>
+      <label for="age"><br />Age</label>
+      <select age="age" id="age">
+        <option value="anyage">Any</option>
+        <option value="18-24">18-24</option>
+        <option value="25-30">25-34</option>
+        <option value="30-35">35-44</option>
+        <option value="35-40">45-54</option>
+        <option value="40-45">45-54</option>
+        <option value="45-50">55-64</option>
+        <option value="50+">65+</option> </select
+      ><br />
       <div>
         <label for="name">name:</label>
         <input

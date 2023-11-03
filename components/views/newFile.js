@@ -1,10 +1,30 @@
 import html from "html-literal";
-export default state => html`
 
+export default state => html`
+<section id="collab">
+  <table id="collabs">
+    <tr>
+      <th>Creative</th>
+      <th>Location</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Name</th>
+      ${state.collabs
+        .map(collab => {
+          return `<tr><td>${collab.creative}</td><td>${
+            collab.location
+          }</td><td>${collab.gender}</td><td>${collab.age.join(
+            " & "
+          )}</td><td>${collab.name}</td></tr>`;
+        })
+        .join("")}
+    </table>
+  </section>
+</tr>
 <div class="collab-container">
     <h3>Collaborate with NYC Creatives</h3>
-<p>Discover creatives searching for collaborations in New York City!</p>
-<!--<div class="collab-container1">
+<p>Fill out the fields to discover creatives in New York City!</p>
+<div class="collab-container1">
 <form action="#">
       <label for="creative"> Seeking creative type  </label>
       <select name="creative" id="creative">
@@ -22,7 +42,6 @@ export default state => html`
         <option value="brooklyn">Brooklyn</option>
         <option value="queens">Queens</option>
       </select>
-
       <label for="gender"><br>Gender</label>
       <select name="gender" id="gender">
       <option value="anygender">Any</option>
@@ -44,25 +63,7 @@ export default state => html`
       <option value="50+">65+</option>
       </select><br>
     <input type="submit" value="Search"/>
--->
-    <section id="collab">
-  <table id="collabs">
-    <tr>
-      <th>Creative</th>
-      <th>Location</th>
-      <th>Gender</th>
-      <th>Age</th>
-      <th>Name</th>
 
-      ${state.collabs
-        .map(collab => {
-          return `<tr><td>${collab.creative}</td><td>${collab.location}</td><td>${collab.gender}</td><td>${collab.age}</td><td>${collab.name}</td></tr>`;
-        })
-        .join("")}
-
-  </section>
-</tr>
-</table>
 </form>
       </div>
 
