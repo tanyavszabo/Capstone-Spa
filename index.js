@@ -34,6 +34,7 @@ function afterRender(state) {
         location: inputList.location.value,
         creative: inputList.creative.value,
         gender: inputList.gender.value,
+        age: inputList.age.value,
         name: inputList.name.value
       };
       // Log the request body to the console
@@ -43,7 +44,7 @@ function afterRender(state) {
         // Make a POST request to the API to create a new pizza
         .post(`${process.env.COLLAB_URL}/collabs`, requestData)
         .then(response => {
-          //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+          //  Then push the new collab onto the collab state collab attribute, so it can be displayed in the collab list
           store.Collab.collabs.push(response.data);
           router.navigate("/Collab");
         })
@@ -70,7 +71,7 @@ router.hooks({
         axios
           // Get request to retrieve the current weather data using the API key and providing a city name
           .get(
-            `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=st%20louis`
+            `https://api.openweathermap.org/data/2.5/weather?lat=40.730610&lon=-73.935242&appid=2d44ee645e03249396fd5a28f8c9d14d`
           )
           .then(response => {
             // Convert Kelvin to Fahrenheit since OpenWeatherMap does provide otherwise

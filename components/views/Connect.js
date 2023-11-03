@@ -1,7 +1,6 @@
 import html from "html-literal";
 export default state => html`
-  <div class="box1">
-    <div style="text-align:center">
+  <div class = "connectBox" >
       <h2>Contact Us</h2>
       <p>Leave us a message:</p>
     </div>
