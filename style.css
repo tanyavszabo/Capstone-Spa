@@ -77,9 +77,6 @@ font-size: 60px;
 background-image: url(assets/img/purple.img)
 }
 
-
-
-
 /*About Page*/
 .about-cccc {
   text-align: center;
@@ -121,7 +118,7 @@ font-stretch: extra-expanded;
 
 
 
-.collab-container {
+#collabs {
   padding: 50px;
   background-color: #cb9bd1c7;
   border: #320138 solid 20px;
@@ -129,14 +126,13 @@ font-stretch: extra-expanded;
   font-stretch: extra-expanded;
   font-weight: bold;
 }
-#collabs tbody {
+.collabs tbody {
   background-color: #fffeff52;
   margin: 25px;
   padding: 25px;
 }
 
-
-#collabs th {
+.collabs th {
   text-align: center;
   color: rgb(255, 230, 119);
   font-size: 40px;
@@ -144,31 +140,35 @@ font-stretch: extra-expanded;
 #collabs td, th {
   width: 25%;}
 
-  #collabs {
-    border: #320138 solid 10px;
-    padding: 50px;
-    font-family: 'Orbitron', sans-serif;
-  font-stretch: extra-expanded;
-  font-weight: bold;
-  }
 @media(max-width: 549px){
 .hidden--mobile {
   display: none !important;}
 
 /*Connect Page*/
-div.connectBox {
+.box1 {
   padding: 50px;
-  background-color: #dddddd6b;
-  padding: 20px;
-  text-align: center;
-}
-
-div.connect-box {
   background-color: #cb9bd1c7;
   border: #320138 solid 20px;
   font-family: 'Orbitron', sans-serif;
   font-stretch: extra-expanded;
   font-weight: bold;
+}
+
+.box1 h2 {
+  font-size: 40px;
+  color: rgb(255, 230, 119);
+}
+.connect-box {
+  background-color: #fffeff52;
+  margin: 25px;
+  padding: 25px;
+}
+
+#form-container {
+  margin: 50px auto;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 #result-container {
@@ -179,35 +179,37 @@ div.connect-box {
 }
 /*Create Page*/
 
-#age {
+#create{
   background-color: #cb9bd1c7;
   border: #320138 solid 20px;
   font-family: 'Orbitron', sans-serif;
   font-stretch: extra-expanded;
   font-weight: bold;
+
 }
+
+.create-container {
+  background-color: #fffeff52;
+
+
 }
-.create-form {
+
+.create-container1 {
   background-color: #cb9bd1c7;
-  border: #320138 solid 20px;
   font-family: 'Orbitron', sans-serif;
   font-stretch: extra-expanded;
   font-weight: bold;
+  margin: 50px;
+  padding: 50px;
 }
-.create-form h2 {
-  font-size: 50px;
+
+.create-p {
   text-align: center;
+  font-size: large;
   color:rgb(255, 230, 119);
-  font-weight: 500;
-  font-family: 'Orbitron', sans-serif;
-font-stretch: extra-expanded;
-margin-bottom: 100px;
-;
+font-size: 40px;
 }
-.submit {
-  background-color: darkkhaki
-    };
-}
+
 
 
 .grid-item {
@@ -226,65 +228,28 @@ margin-bottom: 100px;
   border: #320138 10px solid;
 }
 
-
-
-.p-grid2 h4 {
-  font-size: 25px;
+.p-grid2 {
+  margin: 30px;
 
 }
+.p-grid2 h4 {
+  font-size: 25px;
+}
+.p-grid2 {}
 
-
-/*Connect page CONTACT US*/
 form {
   border: solid 1px black;
   display: flex;
   flex-direction: column;
   margin: 1rem 1rem;
-  padding: 50px;
-  background-color: #cb9bd1c7;
-  border: #320138 solid 20px;
-  font-family: 'Orbitron', sans-serif;
-  font-stretch: extra-expanded;
-  font-weight: bold;
-  box-shadow: #000000 50px 50px 50px;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 50px;color: rgb(255, 207, 95);
-  font-family: 'Orbitron', sans-serif;
-  font-stretch: extra-expanded;
-text-align: center;
-background-color: #dddddd6b;
-padding: 20px;
-box-shadow: #000000 50px 50px 50px;
-
-}
-
-p {
-  text-align: center;
-  color: rgb(255, 230, 119);
-  font-size: 20px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  font-stretch: extra-expanded;
-
+form > * {
+  margin: 0.5rem;
 }
 
 form > input[type="submit"] {
   width: 40%;
   margin: 0.5rem;
   margin-right: auto;
-  box-shadow: #000000 50px 50px 50px;
-  border: #0000003d solid 20px;
-  background-color: #320538;
-  border-radius: 10px;
-  font-family: 'Orbitron', sans-serif;
-  font-stretch: extra-expanded;
-  font-weight: bold;
-  font-size: 20px;
-  color: rgb(255, 207, 95);
 }
-
-/*Connect page*/
-
