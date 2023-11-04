@@ -1,6 +1,8 @@
+
 import html from "html-literal";
 export default state => html`
-  <div class = "connectBox" >
+  <div class="box1">
+    <div style="text-align:center">
       <h2>Contact Us</h2>
       <p>Leave us a message:</p>
     </div>
@@ -24,7 +26,6 @@ export default state => html`
               placeholder="Your last name.."
               required
             />
-
             <label for="subject">Subject</label>
             <textarea
               id="messageInput"
