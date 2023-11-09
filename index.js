@@ -34,14 +34,15 @@ function afterRender(state) {
         location: inputList.location.value,
         creative: inputList.creative.value,
         gender: inputList.gender.value,
-        age: inputList.age.value,
-        name: inputList.name.value
+        name: inputList.name.value,
+        message: inputList.message.value,
+        photo: inputList.photo.value
       };
       // Log the request body to the console
       console.log("request Body", requestData);
 
       axios
-        // Make a POST request to the API to create a new pizza
+        // Make a POST request to the API to create a new collab
         .post(`${process.env.COLLAB_URL}/collabs`, requestData)
         .then(response => {
           //  Then push the new collab onto the collab state collab attribute, so it can be displayed in the collab list

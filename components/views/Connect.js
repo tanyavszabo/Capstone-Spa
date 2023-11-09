@@ -1,15 +1,15 @@
-
 import html from "html-literal";
 export default state => html`
+  <div class="about-cccc">Connect.Collab.Create.<br>COBALT</div>
   <div class="box1">
     <div style="text-align:center">
       <h2>Contact Us</h2>
-      <p>Leave us a message:</p>
+
     </div>
-    <div class="connect-box">
       <div class="column">
         <div class="column">
           <form action="/action_page.php" id="postForm">
+          <p>Leave us a message:</p>
             <label for="fname">First Name</label>
             <input
               type="text"

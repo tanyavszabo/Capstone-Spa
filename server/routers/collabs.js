@@ -12,6 +12,8 @@ router.post("/", async (request, response) => {
     newCollab.location = body.location;
     newCollab.gender = body.gender;
     newCollab.name = body.name;
+    newCollab.message = body.message;
+    newCollab.photo = body.photo;
     const data = await newCollab.save();
 
     response.json(data);
@@ -79,10 +81,12 @@ router.put("/:id", async (request, response) => {
       request.params.id,
       {
         $set: {
-          crust: body.crust,
-          cheese: body.cheese,
-          sauce: body.sauce,
-          toppings: body.age
+          creative: body.creative,
+          location: body.location,
+          gender: body.gender,
+          name: body.name,
+          message: body.message,
+          photo: body.photo
         }
       },
       {

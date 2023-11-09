@@ -1,27 +1,29 @@
 import html from "html-literal";
 export default state => html`
-  <section id="create">
-    <form id="create" method="POST" action="">
+<div class="about-cccc">Connect.Collab.Create.<br />COBALT</div>
+    <form method="POST" action="">
+
       <h2>Create a post</h2>
-      <div>
-        <label for="creative">Creative:</label>
+      <p> Create a post for collaborations! Request a collaboration by filling out the following fields.</p>
+      <div class="column">
         <select id="creative" name="creative">
           <option value="">Select a Creative</option>
-          <option value="model">Model</option>
-          <option value="photographer">Photographer</option>
+          <option value="Model">Model</option>
+          <option value="Photographer">Photographer</option>
           <option value="Stylist">Stylist</option>
-          <option value="MakeupArtist">Makeup Artist</option>
+          <option value="Makeup-Artist">Makeup Artist</option>
         </select>
       </div>
+
       <div>
         <label for="location">Location</label>
         <select id="location" name="location">
           <option value="">Select a Borough in NYC</option>
-          <option value="brooklyn">Brooklyn</option>
-          <option value="bronx">The Bronx</option>
-          <option value="manhattan">Manhattan</option>
-          <option value="queens">Queens</option>
-          <option value="staten-island">Staten Island</option>
+          <option value="Brooklyn">Brooklyn</option>
+          <option value="Bronx">The Bronx</option>
+          <option value="Manhattan">Manhattan</option>
+          <option value="Queens">Queens</option>
+          <option value="Statenisland">Staten Island</option>
         </select>
       </div>
 
@@ -29,22 +31,30 @@ export default state => html`
         <label for="gender">Gender:</label>
         <select id="gender" name="gender">
           <option value="">Select a Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
         </select>
       </div>
       <div>
-        <label for="name">name:</label>
+        <label for="name">Name:</label>
         <input
           type="text"
           name="name"
           id="name"
-          placeholder="Enter name"
+          placeholder="Enter Your Name"
           required
         />
       </div>
       <div>
-        <textarea id="message" placeholder="Enter your message"></textarea>
+      <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Describe your project..."
+              required
+              style="height:170px"
+            ></textarea>
+
         <input type="file" id="photo" accept="image/*" />
       </div>
       <input type="submit" name="submit" value="Submit" />
