@@ -9,17 +9,27 @@ const collabSchema = new mongoose.Schema({
   creative: {
     type: String,
     required: true,
-    enum: ["model", "photographer", "stylist", "makeup-artist"]
+    enum: ["Model", "Photographer", "Stylist", "Makeup-Artist"]
   },
   location: {
     type: String,
     required: true,
-    enum: ["statenisland", "bronx", "manhattan", "queens", "brooklyn"]
+    enum: ["Statenisland", "Bronx", "Manhattan", "Queens", "Brooklyn"]
   },
   gender: {
     type: String,
     required: true,
-    enum: ["male", "female"]
+    enum: ["Male", "Female"]
+  },
+
+  message: {
+    type: String,
+    required: true,
+    validate: /^[A-Za-z0-9 ]*$/
+  },
+  photo: {
+    type: String,
+    required: false
   }
 });
 

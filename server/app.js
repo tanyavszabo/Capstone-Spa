@@ -3,7 +3,6 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import collabs from "./routers/collabs.js";
-
 // Load environment variables from .env file
 dotenv.config();
 
@@ -101,6 +100,7 @@ app.use(logging);
 //     })
 //   );
 // });
+
 app.use("/collabs", collabs);
 const PORT = process.env.PORT || 4040;
 // Tell the Express app to start listening
